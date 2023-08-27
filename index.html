@@ -3,16 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Convertor</title>
+    <title>Temperature Convertor</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <nav>
+        <h3>Bharat Intern Task 2</h3>
+        <h4>Anshika Varshney | anshikavars34@gmail.com</h4>
+    </nav>
     <div class="container">
-        <div class="form">
-            <form method="post">
-                <input type="number" name="unit" id="unit">
-                <button type="submit">Submit</button>
-            </form>
+        <h1 class="heading">Temperature Converter </h1>
+        <span>Enter the value in any field you will get all the Temperature</span>
+        <span>After entering the value. Press Enter</span>
+        <div class="temp-container">
+            <label for="Celcius">Celcius :-</label>
+            <input 
+            onchange ="handleValue(event)"
+            type="number" 
+            name="Celcius" 
+            id="Celcius" 
+            class="Celcius" 
+            placeholder="Enter Temperature in Celcius"/>    
+        </div>
+        <div class="temp-container">
+            <label for="fahre">Fahrenheit :-</label>
+            <input 
+            onchange="handleValue(event)"
+            type="number" 
+            name="Fahrenheit" 
+            id="Fahrenheit" 
+            class="Fahrenheit" 
+            placeholder="Enter Temperature in Fahrenheit"/>    
+        </div>
+        <div class="temp-container">
+            <label for="Kelvin">Kelvin :-</label>
+            <input 
+            onchange="handleValue(event)"
+            type="number" 
+            name="Kelvin" 
+            id="Kelvin" 
+            class="Kelvin" 
+            placeholder="Enter Temperature in Kelvin"/>    
         </div>
     </div>
+    
+    
+    <script src="./js/index.js"></script>
 </body>
 </html>
